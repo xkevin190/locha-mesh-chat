@@ -74,6 +74,25 @@ export const addContacts = (uid, obj) =>
     });
   });
 
+export const deleteAllContacts = () => {
+  new Promise(async (resolve, reject) => {
+    Realm.open({
+      schema: [userSchema, contactSchema],
+      schemaVersion: 2
+    }).then(realm => {
+      realm.write(() => {
+        try {
+          let contacts = realm.objects("Contact");
+          realm.delete(contacts);
+          resolve();
+        } catch (err) {
+          reject();
+        }
+      });
+    });
+  });
+};
+
 export const getUserData = () =>
   new Promise(async resolve => {
     Realm.open({

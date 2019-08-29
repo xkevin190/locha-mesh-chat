@@ -2,9 +2,19 @@ import { ActionTypes } from "../constants";
 import AsyncStorage from "@react-native-community/async-storage";
 import { IntialUser } from "../../utils/constans";
 import { createFolder } from "../../utils/utils";
-import { writteUser, getUserData } from "../../database/realmDatabase";
+import {
+  writteUser,
+  getUserData,
+  deleteAllContacts
+} from "../../database/realmDatabase";
+import Bitcoin from "../../utils/Bitcoin";
+
+const bitcoin = new Bitcoin();
 
 export const InitialState = () => async dispatch => {
+  // deleteAllContacts();
+  const address = await bitcoin.generateAddress();
+  console.log(address);
   getUserData().then(async res => {
     if (res.length) {
       await createFolder();

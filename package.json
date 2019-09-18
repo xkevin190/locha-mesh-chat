@@ -61,6 +61,7 @@
     "redux-logger": "^3.0.6",
     "redux-promise": "^0.6.0",
     "redux-thunk": "^2.3.0",
+    "semver": "^6.3.0",
     "stream-browserify": "^1.0.0",
     "string_decoder": "~0.10.25",
     "timers-browserify": "^1.0.1",
@@ -68,6 +69,7 @@
     "url": "~0.10.1",
     "util": "~0.10.3",
     "vm-browserify": "0.0.4",
+    "ws": "^7.1.2",
     "yup": "^0.26.10"
   },
   "devDependencies": {
@@ -75,6 +77,7 @@
     "@babel/runtime": "^7.5.5",
     "babel-jest": "^24.8.0",
     "jest": "^24.8.0",
+    "mem": "^5.1.1",
     "metro-react-native-babel-preset": "^0.55.0",
     "react-test-renderer": "16.8.3",
     "rn-nodeify": "tradle/rn-nodeify"

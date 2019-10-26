@@ -1,3 +1,5 @@
+<img src="documents/configuration/files/logo.png" width="20%">
+
 # Locha Mesh Chat
 
 The first mobile application for the Locha Mesh. The aim is to build an app for communication using text messages, images, documents or voice notes, and also for broadcasting offline signed Bitcoin transactions.

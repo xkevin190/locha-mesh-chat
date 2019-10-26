@@ -28,3 +28,4 @@ npm install -g react-native-cli
 
 ### Android Studio and development enviroment
 
+...

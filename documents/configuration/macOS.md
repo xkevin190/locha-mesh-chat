@@ -1,3 +1,5 @@
+<img src="files/logo.png" width="20%">
+
 # macOS configuration guide
 
 ## Install dependencies

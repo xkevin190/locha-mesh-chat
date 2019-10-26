@@ -1,3 +1,5 @@
+<img src="files/logo.png" width="20%">
+
 ## Using macOS to compile Locha Mesh Chat for Android devices
 
 ### 1. Install Android Studio

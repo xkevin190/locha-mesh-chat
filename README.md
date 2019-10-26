@@ -44,7 +44,7 @@ You need to configure your equipment to run this app, the process is different d
   
   * [macOS](documents/configuration/macOS.md)
   * Windows :construction_worker:
-  * Linux :construction_worker:
+  * [Linux](documents/configuration/Linux.md)
 
 In this link are the steps to follow the official [Documentation](https://facebook.github.io/react-native/docs/0.59/getting-started)
 

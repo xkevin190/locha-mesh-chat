@@ -58,3 +58,39 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 ```
+
+## 3. Run Locha Mesh Chat application.
+
+You can run the application in the android emulator or in your mobile phone.
+
+### Use your mobile phone
+You can use your physical device plugging it to your computer using a USB cable and following the [next steps](https://facebook.github.io/react-native/docs/next/running-on-device)
+
+### Use a virtual device
+If you don't have any virtual device yet you need to create almost one following the [next steps](https://developer.android.com/studio/run/managing-avds.html)
+
+__
+
+Now, inside the locha-mesh-chat folder we can run the application:
+
+```bash
+react-native run-android
+```
+
+That's all :wink:
+
+___
+Copyright (c) 2019 Bitcoin Venezuela and Locha Mesh developers.
+
+Licensed under the **Apache License, Version 2.0**
+
+**A text quote is shown below**
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+___
+Read the full text:
+[Locha Mesh Apache License 2.0](https://github.com/btcven/LochaMesh-Chat/blob/master/LICENSE)

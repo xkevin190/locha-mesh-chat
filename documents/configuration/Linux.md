@@ -47,3 +47,14 @@ In the tab SDK manager. e.g. select `Android 4.4 (KitKat)`-`API Level: 19` and c
 The SDK and related tools will be downloaded, when it finishes click `OK`.
 
 <img src="files/API_selection.png" width="75%"/>
+
+### Configure the ANDROID_HOME environment variable
+
+Add the following lines to your $HOME/.bash_profile or $HOME/.bashrc config file:
+```bash
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+```

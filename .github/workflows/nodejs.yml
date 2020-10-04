@@ -21,3 +21,15 @@ jobs:
     - run: yarn test
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v1
+    - name: Make Gradlew Executable
+      run: cd android && chmod +x ./gradlew
+        # Build Command
+    - name: Build Android Release
+      run: |
+          cd android && gradlew assembleRelease
+      # Upload to Artifact
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v1
+      with:
+        name: app-release.apk
+        path: android/app/build/outputs/apk/release/

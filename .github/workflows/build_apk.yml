@@ -27,6 +27,9 @@ jobs:
       
     - name: Install NDK
       run: echo "y" | sudo ${ANDROID_HOME}/tools/bin/sdkmanager --install "ndk;21.0.6113669" --sdk_root=${ANDROID_SDK_ROOT}
+    
+    - name: Add toolchain
+      run: rustup target add aarch64-linux-android armv7-linux-androideabi x86_64-linux-android i686-linux-android
        
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
